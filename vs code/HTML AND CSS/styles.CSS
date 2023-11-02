@@ -15,18 +15,28 @@ button
     background-color:hex(#ff0);
 
 }
+*/
+body{
+    background-color: antiquewhite;
+}
+
+.top
+{
+    color:rgb(78, 21, 125)
+
+}
+
+h1,p{
+    background-color: blueviolet;
+}
 
 #heading1
 {
     color:aquamarine;
 }
 
-*/
-
-.top
+button
 {
-    color:blueviolet
-
+    background-color: rgba(144, 63, 226, 0.522);
 }
-
 
