@@ -33,12 +33,32 @@ h1,p{
 
 #heading1
 {
-    color:aquamarine;
-    text-align: right;
+    
+    text-align: start;
+    text-decoration: red underline 5px;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-family: cursive;
+}
+
+#heading2
+{
+    font-weight: lighter;
+    font-family:'Gill Sans';
+    font-size: 50px;
+    line-height: 20px;
 }
 
 button
 {
     background-color: rgba(144, 63, 226, 0.522);
+    text-decoration: red solid 10px;
+    text-transform: capitalize;
+}
+
+img{
+    inline-size: 500px;
+
+    box-shadow: 20px;
 }
 
