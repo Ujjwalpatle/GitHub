@@ -1,3 +1,19 @@
-#Headline{
-    text-decoration: 3px red;
+.Headline
+    {
+        width: none;
+        height: 40px;
+        border: 1px solid blue;
+        text-align: justify;
+        font-size: 30px;
+    }
+
+div.scroll{
+    background-color: #333;
+    overflow: auto;
+    white-space: nowrap;
+    padding:10px;
+}
+
+div.scroll img{
+    padding: 10px;
 }
