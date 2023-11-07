@@ -3,8 +3,7 @@
     margin: 0;
     box-sizing: border-box;
 }
-
-
+/*  LOGO*/
 .popup-image{
     position: fixed;
     background: rgba(0,0,0,0.9);
@@ -27,7 +26,6 @@
     border-radius: 360px;
 }
 
-
 .popup-image img {
     display: flex;
     margin: 0px;
@@ -38,6 +36,28 @@
     width: 100%;
 }
 
+.profileimg{
+  position: absolute;
+  right: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  width: 80px;
+  height: 80px;
+  box-sizing: 10px 10px 10px;
+}
+
+.logoimg{
+  display: flex;
+  margin-left: 16px;
+  margin-top: 0px;
+  width: 161px;
+  height: 80px;
+}
+
+
+
+
+/* NAV BAR*/
 
 header{
     position: relative;
@@ -51,79 +71,78 @@ nav{
     margin: 3px;
 }
 
-.profileimg{
-    position: absolute;
-    right: 80px;
-    border-radius: 50%;
-    object-fit: cover;
-    width: 80px;
-    height: 80px;
-    box-sizing: 10px 10px 10px;
+/*headline*/
+.Headline
+    {
+        width: none;
+        text-align: justify;
+        font-size: 30px;
+    }
+
+/* Caption text */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
 }
 
-.logoimg{
-    display: flex;
-    margin-left: 16px;
-    margin-top: 0px;
-    width: 161px;
-    height: 80px;
+.slider-container {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
+.slider {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
 
+.slide {
+  float: left;
+  width: 100%;
+  position: relative;
+}
 
-
-.slideshow-container {
-    max-width: 600px;
-    position: relative;
-    margin: auto;
-  }
-
-.mySlides {
-    display: none;
-  }
-
-img {
-    width: 100%;
-    height: auto;
-  }
-
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-  }
-
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-
-.prev:hover, .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-  }
+.slide img {
+  width: 100%;
+  height: auto;
+}
 
 .caption {
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    padding: 10px;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-  }
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px;
+}
+
+.arrows {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+}
+
+.arrow {
+  font-size: 30px;
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  margin: 0 10px;
+}
+
+.arrow:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+}
 
 
-
-  
-
+/*slide images*/
 .box{
     height: auto;
     width: auto;
@@ -166,7 +185,7 @@ img {
         float: none;
         display: block;
         text-align: left;
-        width: 100%;
+        width: 50%;
         margin: 0;
         padding: 14px;
     }
@@ -177,12 +196,7 @@ img {
     
 }
 
-.Headline
-    {
-        width: none;
-        text-align: justify;
-        font-size: 30px;
-    }
+
 
 div.scroll{
     background-color: #333;
@@ -192,5 +206,7 @@ div.scroll{
 }
 
 div.scroll img{
-    padding: 10px;
+    padding: 30px;
+    width: 600px;
+    height: 600px;
 }
