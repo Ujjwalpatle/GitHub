@@ -1,86 +1,23 @@
-/*
-
-*
-{
-    color: rgb(68, 217, 217);
-}
-
-body
-{
-    background-color: rgb(65, 65, 228);
-}
-button 
-{
-    color:crimson;
-    background-color:hex(#ff0);
-
-}
-
 body{
-    background-color: aqua;
-    background-image: url("https://wallpaperaccess.com/full/47908.jpg");
-}
-*/
-.top
-{
-    color:rgb(78, 21, 125);
-    border-style: solid;
-
-}
-
-.A{
-    height: 100px;
-    width: 100px;
-    background-color:green;
-    margin: 25px;
-    padding: 25px;
-    display: inline;
-}
-.B{
-    height: 100px;
-    width: 100px;
-    background-color: yellow;
-    margin: 25px;
-    padding: 25px;
-    display: none;
-
-}
-.C{
-    height: 100px;
-    width: 100px;
-    background-color: red;
-    margin: 25px;
-    padding: 25px;
-    display: inline-block;
-}
-#heading2
-{
-    height: 100px;
-    width: 100%;
-    border: 2px solid red;
-    border-radius: 5px;
-
-    padding: 25px 0px 25px 0px;
-    margin-bottom: 100px;
     text-align: center;
-    text-transform: capitalize;
-    font-weight: 900;
-    font-family: cursive;
-    display:block
-
 }
 
-button
-{
-    background-color: rgba(144, 63, 226, 0.522);
-    text-decoration: red solid 10px;
-    text-transform: capitalize;
-    margin-top: 10px;
+.loder{
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    border: 30px solid beige;
+    border-top: 30px solid black;
+    border-radius:50%;
+    animation: rotate 3s ease-in infinite normal ;
+    
 }
+@keyframes rotate{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
 
-img{
-    inline-size: 500px;
-
-    box-shadow: 20px;
 }
-

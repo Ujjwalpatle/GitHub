@@ -4,6 +4,7 @@
 }
 
 body {
+    background-image: url("c:\\Users\\ACER\\OneDrive\\Pictures\\Screenshots\\photo.png.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -44,27 +45,39 @@ nav {
     height: 80px;
 }
 
-
 /* Slideshow container */
 .slideshow-container {
-    max-width: 1200px;
+    max-width: 100%;
     position: relative;
-    margin: auto;
+    max-height: 550px;
+    padding: 10px;
+    margin: 0 auto; /* Center the container */
     background-color: rgba(0, 0, 0, .5);
+    
+    
+}
+/*
+.slideshow-container img :hover{
+    transition: ease;
+    transform: scale(1.25);
+}
+*/
+
+.slideshow-container img {
+    max-width: 100%; /* Make the image responsive */
+    height: 450px; /* Maintain the image's aspect ratio */
+    display: block; /* Remove extra space below inline images */
+    margin: 0 auto; /* Center the image within its container */
+    
 }
 
-.slideshow-container img{
-    position: relative;
-    width:100vh;
-    height: 500px;
-    text-align: center;
-}
+
 /* Caption text */
 .caption {
     background-color: rgba(240, 255, 255, 0.188);
     border-radius: 8.09px;
     padding-bottom: 5px;
-    margin: 10px;
+    margin: 15px;
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: transparent;
 }
@@ -87,7 +100,7 @@ nav {
 /* Fading animation */
 .fade {
     animation-name:fade;
-    animation-duration: 1.5s;
+    animation-duration: 2.5s;
 }
 
 @keyframes fade {
@@ -105,18 +118,14 @@ nav {
     .text {
         font-size: 11px
     }
-    .slideshow-container img{
-        width: 100%;
-        text-align: center;
-    }
-}
 
+}
 
 /* Style for the manual arrows */
 .prev, .next {
     cursor: pointer;
     position: absolute;
-    top: 50%;
+    top: 45%;
     width: auto;
     padding: 16px;
     margin-top: -22px;
@@ -135,6 +144,7 @@ nav {
 
 .prev:hover, .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
+    transform: scale(2);
 }
 
 .popup-image {
@@ -177,25 +187,4 @@ nav {
     text-align: center;
 }
 
-.fullscreen {
-    position:relative;
-    top: 0;
-    left: 0;
-    width: fit-content;
-    height: fit-content;
-    object-fit: contain;
-    text-align: center;
-    z-index: 1000;
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.fullscreen img {
-    max-width: 100%;
-    max-height: 100%;
-    width: 100%;
-    height: 100%;
-    align-items: center;
-}
