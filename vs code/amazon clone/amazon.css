@@ -137,3 +137,144 @@ span{
     font-size: 0.9rem;
     font-weight: 700;
 }
+
+main{
+    background-color: aqua;
+    height: 400px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+}
+
+.main-msg{
+    background-color: aquamarine;
+    color: #ffffff;
+    height: 40px;
+    width: 98%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.85rem;
+    margin-bottom: 25px;
+
+}
+
+.main-msg a:hover{
+    border-bottom: 2px solid white;
+    color: #007185;
+   
+}
+
+/*shop*/
+.shop{
+    
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: rgba(189, 187, 187, 0.5);
+
+
+}
+
+.box{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px 0px 15px ;
+    height: 400px;
+    width: 23%;
+    background-color:white;
+
+}
+.box-content{
+    margin-left: 10px;
+    margin-right: 10px;
+    
+}
+
+.box-content p{
+    color: blue;
+}
+
+.box-img{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    height: 300px;
+    width: 100%;
+}
+/* footer*/
+.line{
+    margin-top: 20px;
+    height: 2px;
+    width: 100%;
+    background-color: #d1d1d1;
+}
+
+.foot1{
+    border-top: 2px solid #d1d1d1 ;
+    background-color: #37475a;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    margin-top: 30px;
+    font-size: 0.5rem;
+}
+
+.foot2{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #222f3d;
+    color:#ffffff;
+    height: 300px;
+}
+
+ul{
+    color: #d1d1d1;
+    margin-top: 30px;
+}
+ul p{
+    font-size: 20px;
+    font-weight: 800;
+}
+ul a{
+    margin-top: 20px;
+    display: block;
+}
+
+
+.foot3{
+    background-color: #222f3d;
+    color: #ffffff;
+    border-top: #d1d1d1;
+    height: 68px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo1{
+    background-image: url("logo.png");
+    background-size:cover;
+    height: 50px;
+    width: 150px;
+}
+
+
+.foot4{
+    background-color: #0f1111;
+    color: #ffff;
+    height: 200px;
+    font-size: 0.7rem;
+    text-align: center;
+    
+}
+
+.footopt {
+    padding: 10px;
+}
+
+.copy{
+    padding: 5px;
+}

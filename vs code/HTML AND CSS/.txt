@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Gallery</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .gallery-container {
+            overflow-x: auto;
+            white-space: nowrap;
+            display: flex;
+            padding: 1rem;
+        }
+
+        .pdf-item {
+            flex: 0 0 auto;
+            margin: 8rem;
+            transition: transform 0.3s;
+            position: relative;
+        }
+
+        .image {
+            max-width: 50rem;
+            height: 70rem;
+            border-radius: 25px;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            opacity: 0;
+            transition: .5s ease;
+            border-radius: 25px;
+            background-color: rgba(62, 64, 63, 0.953);
+        }
+
+        .pdf-item:hover .overlay {
+            opacity: 1;
+        }
+
+        .text {
+            color: white;
+            font-size: 1rem;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        /* Media query for responsiveness */
+        @media (max-width: 768px) {
+            .gallery-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .pdf-item {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="gallery-container">
+    <div class="pdf-item">
+        <a href="D:\notes\AIKRR III TO V NOTES.pdf" target="_blank">
+            <img class="image" src="C:\Users\ACER\OneDrive\Pictures\Screenshots\IMG_20230415_213755.jpg" alt="PDF 1">
+            <div class="overlay">
+                <div class="text">Hello World</div>
+            </div>
+        </a>
+    </div>
+    <div class="pdf-item">
+        <a href="D:\notes\CAO(2).pdf" target="_blank">
+            <img class="image" src="C:\Users\ACER\OneDrive\Pictures\Screenshots\Screenshot 2023-11-01 115258.png" alt="PDF 2">
+            <div class="overlay">
+                <div class="text">Hello World</div>
+            </div>
+        </a>
+    </div>
+    <!-- Add more PDF items as needed -->
+</div>
+
+</body>
+</html>

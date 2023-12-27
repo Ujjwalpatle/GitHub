@@ -1,16 +1,19 @@
 let slideIndex = 0;
-let slideshowActive = true;
+let slideshowActive = true; // Flag to track slideshow activity
 let slideshowTimeout;
 
+// Manual control buttons
 const prevButton = document.querySelector('.prev');
 const nextButton = document.querySelector('.next');
 
 prevButton.addEventListener('click', () => plusDivs(-1));
 nextButton.addEventListener('click', () => plusDivs(1));
 
+// Manual control functions
 function plusDivs(n) {
     clearTimeout(slideshowTimeout);
     showDivs((slideIndex -= n));
+    // Start automatic slideshow after manual control
     slideshowTimeout = setTimeout(showSlides, 2000);
 }
 
@@ -38,6 +41,7 @@ function showDivs(n) {
     dots[slideIndex - 1].className += " active";
 }
 
+// Automatic slideshow
 function showSlides() {
     if (slideshowActive) {
         let i;
@@ -61,33 +65,10 @@ function showSlides() {
         slides[slideIndex - 1].style.display = "block";
         dots[slideIndex - 1].className += " active";
 
+        // Reset the timeout for automatic slideshow
         slideshowTimeout = setTimeout(showSlides, 2000);
     }
 }
 
+// Initial call to start the slideshow
 showSlides();
-
-function openModal(src, alt, caption) {
-    var modal = document.getElementById("myModal");
-    var modalImg = document.getElementById("modalImage");
-    var modalCaption = document.getElementById("caption");
-
-    modal.style.display = "block";
-    modalImg.src = src;
-    modalImg.alt = alt;
-    modalCaption.innerHTML = caption;
-}
-
-function closeModal() {
-    document.getElementById("myModal").style.display = "none";
-}
-
-var slides = document.querySelectorAll('.mySlides');
-slides.forEach(function (slide, index) {
-    slide.addEventListener('click', function () {
-        var imageSrc = this.querySelector('img').src;
-        var imageAlt = this.querySelector('img').alt;
-        var captionText = this.querySelector('#text h3').innerText + ": " + this.querySelector('#text p').innerText;
-        openModal(imageSrc, imageAlt, captionText);
-    });
-});
