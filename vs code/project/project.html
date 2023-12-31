@@ -19,10 +19,13 @@
                 <img class="profile-img" src="C:\Users\ACER\OneDrive\Pictures\Screenshots\Screenshot 2023-11-05 111809.png" alt="profile-image">
             </div>
             <div class="logo-image">
-                <img class="logo-img" src="C:\Users\ACER\OneDrive\Pictures\Screenshots\Screenshot 2023-11-05 111809.png" alt="">
+                <img class="logo-img" src="C:\Users\ACER\OneDrive\Pictures\Screenshots\Screenshot 2023-11-05 111809.png" alt="logo-image">
             </div>
         </nav>
     </header>
+
+
+     <!--slide show starts-->
 
     <main>
         <div class="container">
@@ -54,17 +57,19 @@
                 </div>
 
                 <!-- Navigation dots -->
-                <div style="text-align: center;">
+                <div style=" text-align: center;">
                     <span class="dot"></span>
                     <span class="dot"></span>
                     <span class="dot"></span>
                 </div>
-            </div>
-            <!-- Manual arrows -->
-            <button class="prev" onclick="plusDivs(-1)">&#10094;</button>
-            <button class="next" onclick="plusDivs(1)">&#10095;</button>
 
-            <script src="script.js"></script>
+                <!-- Manual arrows -->
+                <button class="prev" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="next" onclick="plusDivs(1)">&#10095;</button>
+
+                <script src="script.js"></script>
+            </div>
+            
 
             <!-- Add this div for the modal -->
             <div id="myModal" class="modal">
@@ -74,13 +79,93 @@
             </div>
         </div>
 
-        
-  
+        <!--slide show ends-->
+        <!--features-->
 
-        <div>
+        <div class="features">
+            <div class="feature" id="myDiv">
+                <span class="closes" onclick="closeDiv()">&times;</span>
+                <strong>About us</strong> <br>We are an organization currently providing Notes, Practical, PYQ of GHRCE Nagpur
+                <br> 
+                this page is on trial so there might be some bugs in it. Thank you! 
+                <br>
+                WELCOME TO
+                <h1> DOIT</h1>
+                powered by 
+                <h2> Let's Do IT! </h2>
+            </div>
             
+            <script>
+                // JavaScript function to hide the div
+                function closeDiv() {
+                    var div = document.getElementById('myDiv');
+                    div.style.display = 'none';
+                }
+            </script>
+        </div>
+        <!--features end-->
 
-            
+
+
+        <!-- PDF gallery 1-->
+        <div class="gallery-container">
+            <element ::before>PRACTICALS</element>
+            <div class="pdf-item">
+                <a href="D:\notes\AIKRR_III_TO_V_NOTES.pdf" target="_blank">
+                    <img class="image" src="C:\Users\ACER\OneDrive\Pictures\Screenshots/IMG_20230415_213755.jpg" alt="PDF 1">
+                    <div class="overlay">
+                        <div class="text">Hello World</div>
+                    </div>
+                </a>
+            </div>
+            <div class="pdf-item">
+                <a href="D:\notes\CAO(2).pdf" target="_blank">
+                    <img class="image" src="C:\Users\ACER\OneDrive\Pictures\Screenshots\Screenshot 2023-11-01 115258.png" alt="PDF 2">
+                    <div class="overlay">
+                        <div class="text">Hello World</div>
+                    </div>
+                </a>
+            </div>
+            <div class="pdf-item">
+                <a href="D:\notes\CAO(2).pdf" target="_blank">
+                    <img class="image" src="C:\Users\ACER\OneDrive\Pictures\Screenshots\Screenshot 2023-11-01 115258.png" alt="PDF 2">
+                    <div class="overlay">
+                        <div class="text">Hello World</div>
+                    </div>
+            </a>
+            </div>
+            <!-- Add more PDF items as needed -->
+        </div>
+
+
+        <!-- PDF gallery 2-->
+        <div class="gallery-container">
+            <element ::before>PRACTICALS</element>
+            <div class="pdf-item">
+                <a href="D:\notes\AIKRR_III_TO_V_NOTES.pdf" target="_blank">
+                    <img class="image" src="C:\Users\ACER\OneDrive\Pictures\Screenshots/IMG_20230415_213755.jpg" alt="PDF 1">
+                    <div class="overlay">
+                        <div class="text">Hello World</div>
+                    </div>
+                </a>
+            </div>
+            <div class="pdf-item">
+                <a href="D:\notes\CAO(2).pdf" target="_blank">
+                    <img class="image" src="C:\Users\ACER\OneDrive\Pictures\Screenshots\Screenshot 2023-11-01 115258.png" alt="PDF 2">
+                    <div class="overlay">
+                        <div class="text">Hello World</div>
+                    </div>
+                </a>
+            </div>
+            <div class="pdf-item">
+                <a href="D:\notes\CAO(2).pdf" target="_blank">
+                    <img class="image" src="C:\Users\ACER\OneDrive\Pictures\Screenshots\Screenshot 2023-11-01 115258.png" alt="PDF 2">
+                    <div class="overlay">
+                        <div class="text">Hello World</div>
+                    </div>
+            </a>
+            </div>
+            <!-- Add more PDF items as needed -->
         </div>
         
     </main>

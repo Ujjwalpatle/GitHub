@@ -1,23 +1,48 @@
-body{
-    text-align: center;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* Change to your preferred background color */
 }
 
-.loder{
-    width: 100px;
-    height: 100px;
-    text-align: center;
-    border: 30px solid beige;
-    border-top: 30px solid black;
-    border-radius:50%;
-    animation: rotate 3s ease-in infinite normal ;
-    
+.close {
+    color: #000000;
+    float: right;
+    margin-right: 10px; /* Adjusted margin for small screens */
+    font-size: 5rem; /* Adjusted font size for small screens */
+    font-weight: bold;
+    cursor: pointer;
+    box-sizing: content-box;
 }
-@keyframes rotate{
-    from{
-        transform: rotate(0deg);
-    }
-    to{
-        transform: rotate(360deg);
+
+.container {
+    background-color: #231cf59e;
+    border: 3px solid #003bfc;
+    margin: 10px; /* Adjusted margin for small screens */
+    position: relative;
+    text-align: center;
+    border-radius: 15px;
+    font-size: 4rem; /* Adjusted font size for small screens */
+}
+
+.close:hover{
+    transition: 0.5s ease-in-out;
+    transform:scale(1.25);
+    border-radius: 10px;
+
+}
+
+/* Media query for small screens */
+@media only screen and (max-width: 768px) {
+    .close {
+        margin-right: 5px; /* Further adjusted margin for smaller screens */
+        font-size: 1.5rem; /* Further adjusted font size for smaller screens */
     }
 
+    .container {
+        max-width: 100%;
+        height: auto;
+        margin: 2px; /* Further adjusted margin for smaller screens */
+        font-size: 1rem; /* Further adjusted font size for smaller screens */
+    }
 }
