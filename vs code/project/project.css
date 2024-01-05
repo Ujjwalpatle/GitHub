@@ -307,7 +307,7 @@ nav {
     left: 0;
     right: 0;
     opacity: 0;
-    transition: .5s ease;
+    transition: .5s ease-in-out;
     max-width: 200px;
     height: auto;
     border-radius: 10px;
