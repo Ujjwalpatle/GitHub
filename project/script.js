@@ -91,3 +91,6 @@ slides.forEach(function (slide, index) {
         openModal(imageSrc, imageAlt, captionText);
     });
 });
+
+
+      
