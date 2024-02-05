@@ -1,0 +1,75 @@
+Beginner Level:
+Hello, World!
+
+Write a simple script that prints "Hello, World!" to the console.
+Variables and Data Types
+
+Declare variables of different data types (string, number, boolean) and perform basic operations.
+Arrays
+
+Create an array, add elements, and perform array operations like accessing elements and finding the length.
+Functions
+
+Write a function that takes two parameters and returns their sum.
+Conditional Statements
+
+Implement a script that checks if a number is even or odd.
+Loops
+
+Use a loop to print numbers from 1 to 10.
+Objects
+
+Create an object representing a person with properties like name, age, and display them.
+
+
+
+
+
+Intermediate Level:
+String Manipulation
+
+Write a function that reverses a given string.
+Array Manipulation
+
+Implement a function that finds the largest number in an array.
+Function Arguments and Default Values
+
+Write a function that takes a default parameter and another optional parameter.
+Working with JSON
+
+Parse a JSON string and access its properties.
+Error Handling
+
+Implement error handling in a function that divides two numbers.
+Asynchronous Programming (Callbacks)
+
+Write a function that simulates an asynchronous operation using callbacks.
+
+
+
+
+
+
+Advanced Level:
+Promises
+
+Convert a callback-based function to use Promises.
+Async/Await
+
+Use async/await to handle asynchronous operations in a more readable way.
+Higher-Order Functions
+
+Create a higher-order function that takes a callback and applies it to an array.
+ES6 Features
+
+Explore and use features like arrow functions, destructuring, and template literals.
+Working with the DOM
+
+Write a script that manipulates the DOM, adding or removing elements dynamically.
+Event Handling
+
+Implement an event listener for a button click and perform an action.
+AJAX and Fetch API
+
+Make an asynchronous request to an API using the Fetch API and display the results.
+These exercises cover a range of JavaScript concepts and skills. Start with the beginner exercises and gradually move to more advanced ones as you become comfortable with the language.

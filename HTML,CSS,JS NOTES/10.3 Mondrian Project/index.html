@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    body{
+      display: flex;
+      height: 800px;
+      align-items: center;
+      justify-content: center;
+    }
+    .container{
+      display: grid;
+      grid-template-columns: 320px 198px 153px 50px;
+      grid-template-rows: 414px 130px 155px;
+      grid-auto-rows: 20px;
+      width: 748px;
+      gap: 9px;
+      background-color: rgb(74, 13, 13);
+
+    }
+
+    .red{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: red;
+    }
+    .w1{
+      background-color: rgb(211, 222, 232);
+      grid-column: span 3;
+    }
+    .w2{
+      grid-row: span 2;
+      background-color: rgb(211, 222, 232);
+    }
+    .w3{
+      background-color: rgb(211, 222, 232);
+      grid-row: span 2;
+      grid-column: span 2;
+    }
+
+    .blue{
+      background-color: blue;
+      border-bottom: 10px solid rgb(74, 13, 13)  ;
+    }
+    .we{
+      background-color:rgb(211, 222, 232) ;
+      grid-row: span 2;
+    }
+    .gray{
+      background-color: rgb(211, 222, 232) ;
+    }
+    .yellow{
+      background-color: rgb(226, 175, 23);
+    }
+    .black{
+      background-color: black;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="red">r</div>
+    <div class="w1">e</div>
+    <div class="w2">w</div>
+    <div class="w3">w</div>
+    <div class="blue">q</div>
+    <div class="we">j</div>
+    <div class="gray">h</div>
+    <div class="yellow">t</div>
+    <div class="black">f</div>
+    
+  </div>
+  
+</body>
+
+</html>

@@ -8,20 +8,24 @@
     font-family: Arial, sans-serif;
     scroll-behavior: smooth;  
 }
-
+body{
+    background-color: #332941;
+}
 
 
 /*logo start*/
 
 header {
     position: relative;
-    background: black;
+    background: #3B3486;
     width: 100%;
+    margin-bottom: 0;
 }
 
 nav {
     display: flex;
     padding: 16.18px;
+    
 }
 
 .profile-img {
@@ -31,7 +35,7 @@ nav {
     object-fit: cover;
     width: 80px;
     height: 80px;
-    box-shadow: 10px 10px 10px;
+    
 }
 
 .logo-img {
@@ -40,23 +44,120 @@ nav {
     border-radius: 50%;
     height: 80px;
     background: transparent;
-    filter: drop-shadow(10px 20px 30px white)
 }
 
 /*logo ends*/
+
+
+/*footer navbar*/
+.navbar{
+    background-color: #aa7bec;
+    border-radius: 10px;
+}
+.tool_bar {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: start;
+    padding-right: 10px;
+    align-items: center;
+
+}
+
+
+.tool a {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 70%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2px;
+    padding: 8px;
+    font-size: medium;
+    transition: 640ms;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 15px;
+}
+.tool{
+    display: inline;
+    max-width: 100%;
+    height: 100%;
+    margin: 4.05px;
+    padding: 4.05px;
+}
+@media (max-width: 768px) {
+    /* Mobile Styles Here *//*main menu bar
+    tool_bar
+    tool
+    tool active
+    */
+    .navbar{
+        position: fixed;
+        width: 100%;
+        height: 50px;
+        background-color: var(--main-color);
+        bottom: 0px;
+        z-index: 99;
+        background-color: #aa7bec;
+    }
+
+    .tool_bar{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        bottom: 0;
+    }
+    .tool{
+        display: inline;
+        width: 100%;
+        height: 100%;
+        margin: 4.05px;
+        padding: 4.05px;
+    }
+    .tool a{
+        display: flex;
+        width: 100%;
+        height: 70%;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2px;
+        padding: 8px;
+        font-size: medium;
+        transition: 640ms;
+    }
+    .tool a .info-tool{
+        display: none;
+    }
+    .tool.activeate a{
+        border-radius: 64px;
+        background-color: var(--first-color);
+        margin-top: 0px;
+    }
+    /*hover (effect)*/
+    .tool :hover{
+        background-color: red;
+        border-radius: 64px;
+        margin-top: 0px;
+    }
+}
+
+/* footer navbar end*/
 /*slideshow starts*/
 
 .slideshow-container {
     max-width: 100%;
     position: relative;
-    max-height: 450px;
+    max-height: 500px;
     margin: 0 auto;
-    background-color: rgba(129, 128, 128, 0.688);
+    background-color: transparent;
 }
 
 .slideshow-container img {
     max-width: 100%;
-    height: 400px;
+    height: 500px;
     display: block;
     margin: 0 auto;
     padding-top: 10px;
@@ -69,34 +170,51 @@ nav {
     bottom: 2rem;
     text-align: center;
     color: white;
-    background-color: rgba(28, 28, 28, 0.404);
+    background-color: #000000;
+    opacity: 0.5;
     border-radius: 8.09px;
     padding-top: 1.25rem;
-    padding-bottom: 1.25rem;
+    padding-bottom: 1rem;
     margin: 15px;
 }
 
 .dot {
+    position: relative;
     height: 15px;
     width: 15px;
     margin-top:8px;
+    bottom: 30px;
     background-color: #bbb;
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
+    
 }
 
 .active {
-    background-color: #717171;
+    background-color: #6f6767;
+    transform: scale(1.25);
+    animation: background-color 2.25s;
 }
 
 .fade {
     animation: fade 2.5s;
 }
 
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 1300px) {
     .text {
         font-size: 11px;
+    }
+
+    .slideshow-container {
+        max-width: 100%;
+        max-height: 400px;
+        
+    }
+    
+    .slideshow-container img {
+        max-width: 100%;
+        height: 400px;
     }
 }
 
@@ -107,26 +225,28 @@ nav {
     width: auto;
     padding: 16px;
     margin-top: -22px;
-    color: white;
+    color: rgb(9, 3, 3);
     font-weight: bold;
     font-size: 18px;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
+    
 }
 
 .next {
-    right: 0;
+    right: 10px;
     border-radius: 3px 0 0 3px;
 }
 
 .prev{
-    left: 0;
+    left: 10px;
     border-radius: 0 3px 3px 0;
 }
 
 .prev:hover, .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
+    color: aliceblue;
     transform: scale(1.25);
 }
 
@@ -246,13 +366,14 @@ nav {
 
 .feature {
     padding: 10px;
+    color: white;
     background-color: #231cf59e;
     border: 3px solid #003bfc;
     margin: 10px; /* Adjusted margin for small screens */
     position: relative;
     text-align: center;
     border-radius: 15px;
-    font-size: 2rem; /* Adjusted font size for small screens */
+    font-size: 1.5rem; /* Adjusted font size for small screens */
 }
 
 .closes:hover{
@@ -264,11 +385,11 @@ nav {
 }
 
 /* Media query for small screens */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1300px) {
     .close {
         margin-right: 1px; /* Further adjusted margin for smaller screens */
         font-size: 1.5rem; /* Further adjusted font size for smaller screens */
-        right: 5px;
+        right: 10px;
         top: 4px;
     }
 
@@ -292,7 +413,7 @@ nav {
     align-items: center;
     font-size: 1.5rem;
     padding: 1rem;
-    margin-left: 50px;
+    margin-left: 10px;
 }
 
 .pdf-item {
@@ -300,6 +421,14 @@ nav {
     transition: transform 0.3s;
     position: relative;
     margin: 20px;
+    border-radius: 10px;   
+}
+
+element{
+    text-shadow: 1px 1px #eada5c;
+    color: white;
+    font-size: 1.5rem;
+    transform: rotate(-90deg);
 }
 
 .pdf-item::before {
@@ -314,9 +443,11 @@ nav {
 }
 
 .image {
-    max-width: 200px;
+    max-width: 250px;
     height: 350px;
     border-radius: 10px;
+    transition: .5s ease-in-out;
+    
 }
 
 .overlay {
@@ -327,15 +458,22 @@ nav {
     right: 0;
     opacity: 0;
     transition: .5s ease-in-out;
-    max-width: 200px;
+    max-width: 250px;
     height: 350px;
     border-radius: 10px;
     background-color: rgba(62, 64, 63, 0.953);
     font-weight: 900;
 }
 
+.image:hover{
+    box-shadow: -10px -10px 10px #6359f8 ,0px -10px 10px 0px #9c32e2,10px -10px 10px #f36896,10px 0px 10px #ff0b0b,10px 10px 10px 0px #ff5500,0px 10px 10px 0px #ff9500,-10px 10px 10px 0px #ffb700 ;
+}
+
+
 .pdf-item:hover .overlay {
     opacity: 0.75;
+    box-shadow: -10px -10px 10px #6359f8 ,0px -10px 10px 0px #9c32e2,10px -10px 10px #f36896,10px 0px 10px #ff0b0b,10px 10px 10px 0px #ff5500,0px 10px 10px 0px #ff9500,-10px 10px 10px 0px #ffb700 ;
+    
 }
 
 .text {
@@ -353,7 +491,7 @@ nav {
         align-items: center;
         padding: 0.1rem;
         font-size: 1rem;
-        margin-left: 30px;
+        margin-left: 0px;
     }
 
     .pdf-item {
@@ -388,15 +526,18 @@ nav {
 
     .pdf-item:hover .overlay {
         opacity: 1;
+        box-shadow: -10px -10px 10px #6359f8 ,0px -10px 10px 0px #9c32e2,10px -10px 10px #f36896,10px 0px 10px #ff0b0b,10px 10px 10px 0px #ff5500,0px 10px 10px 0px #ff9500,-10px 10px 10px 0px #ffb700 ;
     }
 
     .pdf-item:hover .overlay{
         opacity: 0;
+        box-shadow: none;
     }
 
     @media(hover:hover){
         .pdf-item:hover .overlay {
             opacity: 1;
+            box-shadow:none ;
         }
     }
 }
@@ -404,18 +545,34 @@ nav {
 
 /* frames */
 .frame {
-    max-width: 200px;
+    max-width: 250px;
     height: 350px; /* Set your desired height */
-    overflow: hidden; /* Optional: Hide overflow content */
+    -moz-hidden-unscrollable:hidden; /* Optional: Hide overflow content */
     border-radius: 5%;
     margin: 20px;
     flex: 0 0 auto;
     transition: transform 0.3s;
     position: relative;
     object-fit: cover;
+    transition: .5s ease-in-out;
+    
+    
   }
 
   .frame iframe{
     width: 100%;
     height: 350px;
   }
+
+  .frame:hover{
+    box-shadow: -10px -10px 10px #6359f8 ,0px -10px 10px 0px #9c32e2,10px -10px 10px #f36896,10px 0px 10px #ff0b0b,10px 10px 10px 0px #ff5500,0px 10px 10px 0px #ff9500,-10px 10px 10px 0px #ffb700 ;
+  }
+  
+@media (max-width: 1300px) {
+    
+    .frame{
+        max-width: 200px;
+    }
+}
+
+
