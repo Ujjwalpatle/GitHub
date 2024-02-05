@@ -29,3 +29,4 @@ images.forEach(image => {
     imageItem.innerHTML = `<img src="${image}" alt="Project Image">`;
     imageList.appendChild(imageItem);
 });
+
