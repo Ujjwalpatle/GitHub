@@ -6,14 +6,13 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   background-color: #1f1e1e;
-  max-width: 100%;
 }
 
 /*navbar starts*/
 .navbar {
   background-color: #000000;
   overflow: hidden;
-  position: sticky;
+  position: fixed;
   width: 100%;
   display: flex;
   align-items: center;
@@ -89,7 +88,7 @@ body {
 main {
   display: flex;
   width: 100%;
-  padding-top: 5vw;
+  padding-top: 10vw;
   justify-content: space-evenly;
   align-items: center;
 }
@@ -169,11 +168,6 @@ header {
   border-radius: 50%;
   height: 25vw;
   box-shadow: 0px 0px 30px 20px aqua;
-  transition: 0.5s ease-in-out;
-  
-}
-.image-section img:hover{
-  transform: scale(1.05);
 }
 
 @media (max-width: 600px) {
@@ -279,6 +273,21 @@ section .container {
   .skills li {
     padding-top: 10px;
   }
+
+  .education {
+    flex-direction: column;
+  }
+
+
+
+  section .projects {
+    padding-top: 30px;
+    flex-direction: column; /* Display items in a column */
+    align-items: center; /* Center items on the x-axis */
+  }
+  
+  
+  
 }
 
 .education-content {
@@ -297,6 +306,7 @@ section .container {
   position: relative;
   padding-left: 37px;
   padding-bottom: 50px;
+  z-index: -1;
 }
 
 .timeline-item::before {
