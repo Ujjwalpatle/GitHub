@@ -52,19 +52,7 @@ function lifeInWeeks(age) {
     }
 
 
-var boy = prompt("Enter boy name");
-var girl = prompt("Enter girl name");
-var love = Math.random();
-love=Math.floor(love*100);
-if(love<50){
-    alert("nat best match love score is less then 50%");
-}
-if(49<love<100){
-    alert("good match love score is less then 99%");
-}
-else{
-    alert("perfect match love score is less then 100%");
-}
+
 
 var fizz=[];
 var buzz=1;
@@ -118,5 +106,17 @@ document.getElementsByClassName("button")[0].style.color="red";// to select item
 document.querySelectorAll("ul .list")[0].style.backgroundColor="green";// to select the query
 document.querySelector("button").classList.toggle("button1");// to click for on/off
 */
-
+var boy = prompt("Enter boy name");
+var girl = prompt("Enter girl name");
+var love = Math.random(6);
+love=Math.floor(love*100);
+if(love<50){
+    alert("nat best match love score is less then 50%");
+}
+if(49<love<100){
+    alert("good match love score is less then 99%");
+}
+else{
+    alert("perfect match love score is less then 100%");
+}
 
