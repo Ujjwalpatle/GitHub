@@ -12,4 +12,5 @@ console.log('name',Name);
 console.log("class",stander);
 console.log('age',x);
 console.log('gender',y);
-console.log('gender',y)
+console.log('gender',y);   
+*/
