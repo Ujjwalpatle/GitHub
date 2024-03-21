@@ -56,6 +56,10 @@ function buttonanimation(currently){
     setTimeout(function(){actively.classList.remove("pressed")},150);
 }
 
+/*minified js code
+
+for(var numberofbutton=document.querySelectorAll(".drum").length,i=0;i<numberofbutton;i++)document.querySelectorAll(".drum")[i].addEventListener("click",function(){var e=this.innerHTML;makesound(e),buttonanimation(e)});function makesound(e){switch(e){case"w":new Audio("sounds/tom-1.mp3").play();break;case"a":new Audio("sounds/tom-2.mp3").play();break;case"s":new Audio("sounds/tom-3.mp3").play();break;case"d":new Audio("sounds/tom-4.mp3").play();break;case"j":new Audio("sounds/snare.mp3").play();break;case"k":new Audio("sounds/crash.mp3").play();break;case"l":new Audio("sounds/kick-bass.mp3").play()}}function buttonanimation(e){var n=document.querySelector("."+e);n.classList.add("pressed"),setTimeout(function(){n.classList.remove("pressed")},150)}document.addEventListener("keypress",function(e){makesound(e.key),buttonanimation(e.key)});*/
+
 
 
 
@@ -63,7 +67,7 @@ function buttonanimation(currently){
 function addition(a,b){
     return a+b;
 }
-function subraction(a,b){
+function subtraction(a,b){
     return a-b;
 }
 function multiply(a,b){

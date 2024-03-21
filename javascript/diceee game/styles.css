@@ -39,3 +39,18 @@ footer {
   font-family: 'Indie Flower', cursive;
 
 }
+.button{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+.refersh{
+  width: 200px;
+  height: 50px;
+  margin: 50px;
+  align-items: center;
+  border-radius: 30px;
+  background-color: #4ECCA3;
+  box-shadow: 5px 5px 5px white,-5px -5px 5px gray;
+}
