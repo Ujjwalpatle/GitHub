@@ -47,105 +47,6 @@ nav {
 }
 
 /*logo ends*/
-
-
-/*footer navbar*/
-.navbar{
-    background-color: #aa7bec;
-    border-radius: 10px;
-}
-.tool_bar {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    justify-content: start;
-    padding-right: 10px;
-    align-items: center;
-
-}
-
-
-.tool a {
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-    height: 70%;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2px;
-    padding: 8px;
-    font-size: medium;
-    transition: 640ms;
-    text-decoration: none;
-    color: black;
-    font-weight: 600;
-    font-size: 15px;
-}
-.tool{
-    display: inline;
-    max-width: 100%;
-    height: 100%;
-    margin: 4.05px;
-    padding: 4.05px;
-}
-@media (max-width: 768px) {
-    /* Mobile Styles Here *//*main menu bar
-    tool_bar
-    tool
-    tool active
-    */
-    .navbar{
-        position: fixed;
-        width: 100%;
-        height: 50px;
-        background-color: var(--main-color);
-        bottom: 0px;
-        z-index: 99;
-        background-color: #aa7bec;
-    }
-
-    .tool_bar{
-        display: flex;
-        width: 100%;
-        height: 100%;
-        bottom: 0;
-    }
-    .tool{
-        display: flex;
-        width: 100%;
-        height: 100%;
-        justify-content: space-evenly;
-        margin: 0;
-        padding: 0;
-    }
-    .tool a{
-        display: flex;
-        width: 100%;
-        height: 70%;
-        justify-content: center;
-        align-items: center;
-        margin-top: 2px;
-        padding: 8px;
-        font-size: medium;
-        transition: 640ms;
-    }
-    .tool a .info-tool{
-        display: none;
-    }
-    .tool.activeate a{
-        border-radius: 64px;
-        background-color: var(--first-color);
-        margin-top: 0px;
-    }
-    /*hover (effect)*/
-    .tool :hover{
-        background-color: red;
-        border-radius: 64px;
-        margin-top: 0px;
-    }
-}
-
-/* footer navbar end*/
 /*slideshow starts*/
 
 .slideshow-container {
@@ -466,14 +367,8 @@ element{
     font-weight: 900;
 }
 
-.image:hover{
-    box-shadow: -5px -5px 5px #6359f8 ,0px -5px 5px 0px #9c32e2,5px -5px 5px #f36896,5px 0px 5px #ff0b0b,5px 5px 5px 0px #ff5500,0px 5px 5px 0px #ff9500,-5px 5px 5px 0px #ffb700 ;
-}
-
 .pdf-item:hover .overlay {
     opacity: 0.75;
-    box-shadow: -5px -5px 5px #6359f8 ,0px -5px 5px 0px #9c32e2,5px -5px 5px #f36896,5px 0px 5px #ff0b0b,5px 5px 5px 0px #ff5500,0px 5px 5px 0px #ff9500,-5px 5px 5px 0px #ffb700 ;
-    
 }
 
 .text {
@@ -526,7 +421,6 @@ element{
 
     .pdf-item:hover .overlay {
         opacity: 1;
-        box-shadow: -5px -5px 5px #6359f8 ,0px -5px 5px 0px #9c32e2,5px -5px 5px #f36896,5px 0px 5px #ff0b0b,5px 5px 5px 0px #ff5500,0px 5px 5px 0px #ff9500,-5px 5px 5px 0px #ffb700 ;
     }
 
     .pdf-item:hover .overlay{
@@ -599,16 +493,3 @@ element{
     width: 100%;
     height: 350px;
   }
-
-  .frame:hover{
-    box-shadow: -5px -5px 5px #6359f8 ,0px -5px 5px 0px #9c32e2,5px -5px 5px #f36896,5px 0px 5px #ff0b0b,5px 5px 5px 0px #ff5500,0px 5px 5px 0px #ff9500,-5px 5px 5px 0px #ffb700 ;
-  }
-  
-@media (max-width: 1300px) {
-    
-    .frame{
-        max-width: 200px;
-    }
-}
-
-
