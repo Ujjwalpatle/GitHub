@@ -1,2 +1,10 @@
 body{
 }
+
+.big-title{
+    border: 3px solid black;
+}
+
+.margin-50{
+    background-color: aquamarine;
+}
