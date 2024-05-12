@@ -197,10 +197,10 @@ body{
   display: block;
 }
 .header ul li a.active{
-  color: #fed700;
+  color: aqua;
 } 
 .header ul li a:hover{
-  color:#fed700;
+  color:aqua;
 }
 .header .menu_icon{
   color:#fff;
@@ -229,7 +229,7 @@ body{
   border-radius: 50%;
   overflow: hidden;
   border: 15px solid #444444;
-  box-shadow: 5px 7px 25px rgba(0, 0, 0, 0.5)
+  box-shadow: 5px 7px 25px rgba(255, 255, 255, 0.5)
 }
 profile-photo .profile{
   height: 100%;
@@ -249,7 +249,7 @@ profile-photo .profile{
   font-size: 14px;
 }
 .profile-text h1{
-  color: #fed700;
+  color: aqua;
   font-size: 3rem; 
 }
 
@@ -263,7 +263,7 @@ profile-photo .profile{
   transition: 0.5s;
 }
 .profile-text .social i:hover{
-  color:#fed700;
+  color:aqua;
   transform: scale(1.5);
 }
 
@@ -285,7 +285,7 @@ profile-photo .profile{
   flex-basis: 60%;
 }
 .about-content h4{
-  color: #fed700;
+  color: aqua;
   font-size: 40px;
   line-height: 70px;
   text-transform: capitalize;
@@ -332,9 +332,10 @@ profile-photo .profile{
   border-radius: 30px;
   border: 2px solid #e5e5e5;
   box-shadow: 0 10px 10px -8px rgb(0 0 0 / 78%);
+  border-color: aqua;
 }
 .btn.active{
-  border-color: #fed700;
+  border-color: aqua;
 }
 
 
@@ -348,7 +349,7 @@ profile-photo .profile{
 }
 
 .education-content .title{
-  color: #fed700;
+  color: aqua;
 }
 .education-content .row .education,
 .education-content .row .internship
@@ -395,7 +396,7 @@ profile-photo .profile{
   height: 100%;
   left: 7px;
   top: 0;
-  background-color: #fed700;  
+  background-color: aqua;  
 }
 .education-content .row .circle-dot{
   position: absolute;
@@ -438,7 +439,7 @@ profile-photo .profile{
   text-transform: uppercase;
   font-size: 40px;
   line-height: 40px;
-  color: #fed700;
+  color: aqua;
   margin-bottom: 20px;
 }
 .project-title p{
@@ -462,7 +463,7 @@ profile-photo .profile{
     transition: .3s;
 }
 .project i{
-  background-color: #fed700;
+  background-color: aqua;
   width: 60px;
   height: 60px;
   color: #333;
@@ -479,7 +480,7 @@ profile-photo .profile{
   text-align: justify;
 }
 .project:hover{
-  border-color: #fed700;
+  border-color: aqua;
 }
 
 /* Demo Start */
@@ -499,7 +500,7 @@ profile-photo .profile{
   text-transform: uppercase;
   font-size: 40px;
   line-height: 40px;
-  color: #fed700;
+  color: aqua;
   margin-bottom: 20px;
 }
 
@@ -526,7 +527,7 @@ profile-photo .profile{
 }
 
 .certificate i {
-  background-color: #fed700;
+  background-color: aqua;
   width: 60px;
   height: 60px;
   color: #333;
@@ -546,7 +547,7 @@ profile-photo .profile{
 }
 
 .certificate:hover {
-  border-color: #fed700;
+  border-color: aqua;
 }
 
 
@@ -569,7 +570,7 @@ profile-photo .profile{
   text-transform: uppercase;
   font-size: 40px;
   line-height: 40px;
-  color: #fed700;
+  color: aqua;
   margin-bottom: 20px;
 }
 
@@ -596,7 +597,7 @@ profile-photo .profile{
 }
 
 .skill i {
-  background-color: #fed700;
+  background-color: aqua;
   width: 60px;
   height: 60px;
   color: #333;
@@ -616,7 +617,7 @@ profile-photo .profile{
 }
 
 .skill:hover {
-  border-color: #fed700;
+  border-color: aqua;
 }
 
 .platforms-content {
@@ -634,7 +635,7 @@ profile-photo .profile{
   text-transform: uppercase;
   font-size: 40px;
   line-height: 40px;
-  color: #fed700;
+  color: aqua;
   margin-bottom: 20px;
 }
 
@@ -661,7 +662,7 @@ profile-photo .profile{
 }
 
 .platform i {
-  background-color: #fed700;
+  background-color: aqua;
   width: 60px;
   height: 60px;
   color: #333;
@@ -681,7 +682,7 @@ profile-photo .profile{
 }
 
 .platform:hover {
-  border-color: #fed700;
+  border-color: aqua;
 }
 
 
@@ -695,7 +696,7 @@ profile-photo .profile{
 .contact-content .contact-title h4{
   font-size: 40px;
   text-transform: capitalize;
-  color: #fed700;
+  color: aqua;
   padding-bottom: 10px;
 }
 .contact-content .contact-title p{
@@ -714,7 +715,7 @@ profile-photo .profile{
 
 .contact .submit{
   width: auto;
-  background-color: #fed700;
+  background-color: aqua;
   padding: 10px 40px;
   font-weight:bold ;
   font-size: 18px;
@@ -827,11 +828,11 @@ profile-photo .profile{
   }
   
   .header ul.active li a.active {
-    color: #fed700;
+    color: aqua;
   }
   
   .header ul.active li a:hover {
-    color: #fed700;
+    color: aqua;
   }
   
 
