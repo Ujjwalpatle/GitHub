@@ -1,0 +1,107 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    background: url(https://img.freepik.com/free-photo/majestic-mountain-peak-tranquil-winter-landscape-generated-by-ai_188544-15662.jpg?w=1380&t=st=1708342726~exp=1708343326~hmac=f20c7bbe3d757d34e971d722f6d1692cea36f46fafb6ed11390cff45f721be35);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+}
+
+.container {
+    text-align: center;
+    margin-top: 2%;
+}
+
+h1 {
+    font-size: 8vw;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
+
+.calculator {
+    border: 5px solid black;
+    padding: 5%;
+    display: inline-block;
+    border-radius: 25px;
+    background: transparent;
+    backdrop-filter: blur(15px);
+    width: 90%;
+    max-width: 500px;
+}
+
+table {
+    margin: auto;
+    width: 100%;
+}
+
+input {
+    border-radius: 20px;
+    border: 5px solid black;
+    font-size: 6vw;
+    height: 10vw;
+    width: 90%;
+    max-width: 470px;
+}
+
+button {
+    align-items: center;
+    margin: 2%;
+    border-radius: 20px;
+    border: 2px solid black;
+    font-size: 5vw;
+    height: 12vw;
+    width: 22vw;
+    max-height: 80px;
+    max-width: 110px;
+    background-color: rgb(97, 92, 92);
+    color: white;
+}
+
+#operation {
+    background-color: rgb(63, 59, 59);
+}
+
+button:hover, #operation:hover {
+    background-color: rgb(243, 140, 5);
+    color: black;
+}
+
+/* Media queries for different screen sizes */
+@media (min-width: 768px) {
+    h1 {
+        font-size: 4vw;
+    }
+
+    input {
+        font-size: 3vw;
+        height: 7vw;
+    }
+
+    button {
+        font-size: 2vw;
+        height: 6vw;
+        width: 10vw;
+    }
+}
+
+@media (min-width: 1200px) {
+    h1 {
+        font-size: 50px;
+    }
+
+    input {
+        font-size: 35px;
+        height: 60px;
+        width: 456px;
+    }
+
+    button {
+        font-size: 30px;
+        height: 80px;
+        width: 110px;
+    }
+}

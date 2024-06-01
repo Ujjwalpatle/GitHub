@@ -1,0 +1,8 @@
+EJS tags
+
+<%= variable tag%>  js output
+<% console.log("hello")%>  js execute
+<%- <h1>hello</h1>%>  render HTML
+<%% to show where EJS tags start & stop %%>  show <% or %>
+<%# comment tag%>  stop execution
+<%- include("header.ejs")%>  insert another EJS file

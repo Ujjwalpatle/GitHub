@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-page{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(https://img.freepik.com/free-photo/majestic-mountain-peak-tranquil-winter-landscape-generated-by-ai_188544-15662.jpg?w=1380&t=st=1708342726~exp=1708343326~hmac=f20c7bbe3d757d34e971d722f6d1692cea36f46fafb6ed11390cff45f721be35);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.login{
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid gray;
+    border-radius: 10px;
+    background: transparent;
+    backdrop-filter: blur(15px);
+}
+
+#login-elemen{
+    padding: 10px;
+    color: white;
+    
+}
+
+#login-element{
+    padding: 10px;
+    color: white;
+    
+}
+.login-ele{
+    font-size: 20px;
+}
+.login-ele input{
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid gray;
+    color: rgb(251, 251, 251);
+    width: 300px;
+    height: 30px;
+}
+.login-ele input:focus{
+    outline: none;
+}
+.login-page button{
+    background: transparent;
+    border: 2px solid black;
+    width: 100px;
+    border-radius: 30px;
+}
+
+.login-page button:hover{
+    background: white;
+    color: black;
+}
+#login-element:hover{
+    color: rgb(0, 0, 0);
+    
+}
+
+@media (max-width:600px) {
+    
+    
+}

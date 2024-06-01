@@ -1,0 +1,17 @@
+{
+  "name": "npm-learning",
+  "version": "1.0.0",
+  "description": "learn",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ujjwal",
+  "license": "ISC",
+  "dependencies": {
+    "silly-password-generator": "^1.0.28",
+    "sillyname": "^0.1.0",
+    "superheros": "^1.0.0"
+  }
+}
